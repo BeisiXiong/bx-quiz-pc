@@ -15,7 +15,7 @@ const quizData = [
             "Jan 11, 2026",
             "Jan 12, 2026",
             "Jan 13, 2026",
-            "Jan 11, 2026"
+            "Jan 14, 2026"
         ],
         correct: 2
     },
