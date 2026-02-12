@@ -10,11 +10,6 @@ const quizData = [
         correct: 1
     },
     {
-        question: "How many days are in a week?",
-        answers: ["5", "6", "7", "8"],
-        correct: 2
-    },
-    {
         question: "What game did we play on the “magical date” at the hotel Vienna House by Wyndham on Jan 17, 2026?",
         answers: ["20 Questions", "Charades", "Who Am I?", "Arm wrestling (LOL)"],
         correct: 0
@@ -27,7 +22,7 @@ const quizData = [
     {
         question: "What default message do you receive when I tap the chip?",
         answers: ["I miss you, cutie", "I miss you, cutie", "I miss you, cutie", "I miss you, cutie"],
-        correct: 1
+        correct: all
     }
 ];
 
