@@ -7,7 +7,7 @@ const quizData = [
             "Dec 22, 2026",
             "Dec 23, 2026"
         ],
-        correct: 1
+        correct: 2
     },
     {
         question: "When did we have sex for the first time?",
@@ -17,7 +17,7 @@ const quizData = [
             "Jan 13, 2026",
             "Jan 11, 2026"
         ],
-        correct: 0
+        correct: 2
     },
     {
         question: "What game did we play on the magical date at the hotel Vienna House by Wyndham on Jan 17, 2026?",
