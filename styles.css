@@ -18,10 +18,22 @@ body {
     max-width: 420px;
 }
 
-h1 {
-    font-size: 22px;
-    margin-bottom: 16px;
+/* Intro */
+
+.intro-box {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
+
+.intro-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 16px 0;
+}
+
+/* Quiz */
 
 .quiz-box {
     background: white;
