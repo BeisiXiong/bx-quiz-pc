@@ -2,22 +2,22 @@ const quizData = [
     {
         question: "When was our first date?",
         answers: [
-            "Dec 20, 2026",
             "Dec 21, 2026",
             "Dec 22, 2026",
-            "Dec 23, 2026"
+            "Dec 23, 2026",
+            "Dec 24, 2026"
         ],
-        correct: 2
+        correct: 1
     },
     {
         question: "When did we have sex for the first time?",
         answers: [
-            "Jan 11, 2026",
-            "Jan 12, 2026",
             "Jan 13, 2026",
-            "Jan 14, 2026"
+            "Jan 14, 2026",
+            "Jan 15, 2026",
+            "Jan 16, 2026"
         ],
-        correct: 2
+        correct: 0
     },
     {
         question: "What game did we play on the magical date at the hotel Vienna House by Wyndham on Jan 17, 2026?",
