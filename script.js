@@ -1,12 +1,12 @@
 const quizData = [
     {
-        question: "What is the capital of France?",
-        answers: ["Berlin", "Madrid", "Paris", "Rome"],
+        question: "When was our first date?",
+        answers: ["Dec 20, 2026", "Dec 21, 2026", "Dec 22, 2026", "Dec 23, 2026"],
         correct: 2
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        answers: ["Earth", "Mars", "Jupiter", "Venus"],
+        question: "When did we have sex for the first time?",
+        answers: ["Jan 12, 2026", "Jan 13, 2026", "Jan 14, 2026", "Jan 15, 2026"],
         correct: 1
     },
     {
@@ -15,18 +15,18 @@ const quizData = [
         correct: 2
     },
     {
-        question: "Which animal says meow?",
-        answers: ["Dog", "Cat", "Cow", "Duck"],
-        correct: 1
-    },
-    {
-        question: "What color is the sky on a clear day?",
-        answers: ["Blue", "Green", "Purple", "Orange"],
+        question: "What game did we play on the “magical date” at the hotel Vienna House by Wyndham on Jan 17, 2026?",
+        answers: ["20 Questions", "Charades", "Who Am I?", "Arm wrestling (LOL)"],
         correct: 0
     },
     {
-        question: "2 + 2 equals?",
-        answers: ["3", "4", "5", "6"],
+        question: "What do I usually call you?",
+        answers: ["Pookie", "Baby", "Cutie", "Paula"],
+        correct: 2
+    },
+    {
+        question: "What default message do you receive when I tap the chip?",
+        answers: ["I miss you, cutie", "I miss you, cutie", "I miss you, cutie", "I miss you, cutie"],
         correct: 1
     }
 ];
