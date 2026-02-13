@@ -12,10 +12,10 @@ const quizData = [
     {
         question: "When did we have sex for the first time?",
         answers: [
-            "Jan 11, 2026",
-            "Jan 12, 2026",
             "Jan 13, 2026",
-            "Jan 11, 2026"
+            "Jan 12, 2026",
+            "Jan 11, 2026",
+            "Jan 10, 2026"
         ],
         correct: 0
     },
