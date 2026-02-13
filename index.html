@@ -31,14 +31,23 @@
 
 </div>
 
-<!-- Final Popup -->
-<div id="popup" class="popup hidden">
+<!-- Congrats Popup -->
+<div id="congratsPopup" class="popup hidden">
     <div class="popup-content">
-        <img src="Beisi-Cartoon.png" alt="Gift Photo">
-        <p>happy valentine's day, cutie ❤️</p>
-        <button onclick="closePopup()">Close</button>
+        <p>congrats cutie, you've won the prize! 🎉</p>
+        <button onclick="goToPrize()">Claim your prize</button>
     </div>
 </div>
+
+<!-- Final Photo Popup -->
+<div id="prizePopup" class="popup hidden">
+    <div class="popup-content">
+        <img src="your-photo.jpg" alt="Gift Photo">
+        <p>happy valentine's date, cutie ❤️</p>
+        <button onclick="closeAllPopups()">Close</button>
+    </div>
+</div>
+
 
 <script src="script.js"></script>
 </body>
