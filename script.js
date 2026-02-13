@@ -2,10 +2,10 @@ const quizData = [
     {
         question: "When was our first date?",
         answers: [
-            "Dec 18, 2026",
+            "Dec 21, 2026",
             "Dec 22, 2026",
-            "Dec 20, 2026",
-            "Dec 23, 2026"
+            "Dec 23, 2026",
+            "Dec 24, 2026"
         ],
         correct: 1
     },
@@ -15,7 +15,7 @@ const quizData = [
             "Jan 13, 2026",
             "Jan 12, 2026",
             "Jan 11, 2026",
-            "Jan 10, 2026"
+            "Jan 14, 2026"
         ],
         correct: 0
     },
