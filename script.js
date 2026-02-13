@@ -51,29 +51,38 @@ const quizData = [
     }
 ];
 
+/* ------------------ State ------------------ */
+
 let currentQuestion = 0;
+
+/* ------------------ Elements ------------------ */
 
 const introEl = document.getElementById("intro");
 const quizScreenEl = document.getElementById("quizScreen");
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 const feedbackEl = document.getElementById("feedback");
-const popup = document.getElementById("popup");
 
-/* ---------- Start ---------- */
+const congratsPopup = document.getElementById("congratsPopup");
+const prizePopup = document.getElementById("prizePopup");
+
+/* ------------------ Start Flow ------------------ */
 
 function startQuiz() {
     introEl.classList.add("hidden");
     quizScreenEl.classList.remove("hidden");
+    currentQuestion = 0;
     loadQuestion();
 }
 
-/* ---------- Quiz ---------- */
+/* ------------------ Quiz Logic ------------------ */
 
 function loadQuestion() {
     const q = quizData[currentQuestion];
 
-    questionEl.textContent = `Question ${currentQuestion + 1}/5: ${q.question}`;
+    questionEl.textContent =
+        `Question ${currentQuestion + 1}/${quizData.length}: ${q.question}`;
+
     feedbackEl.textContent = "";
     feedbackEl.className = "";
     answersEl.innerHTML = "";
@@ -88,9 +97,7 @@ function loadQuestion() {
 
 function checkAnswer(selectedIndex) {
     const rule = quizData[currentQuestion].correct;
-
-    const isCorrect =
-        rule === "all" || selectedIndex === rule;
+    const isCorrect = (rule === "all" || selectedIndex === rule);
 
     if (isCorrect) {
         feedbackEl.textContent = "Correct ✅";
@@ -100,7 +107,7 @@ function checkAnswer(selectedIndex) {
             currentQuestion++;
 
             if (currentQuestion >= quizData.length) {
-                showPopup();
+                showCongratsPopup();
             } else {
                 loadQuestion();
             }
@@ -112,15 +119,20 @@ function checkAnswer(selectedIndex) {
     }
 }
 
-/* ---------- Popup ---------- */
+/* ------------------ Popup Flow ------------------ */
 
-function showPopup() {
-    popup.classList.remove("hidden");
+function showCongratsPopup() {
+    congratsPopup.classList.remove("hidden");
 }
 
-function closePopup() {
-    popup.classList.add("hidden");
-    currentQuestion = 0;
-    introEl.classList.remove("hidden");
+function goToPrize() {
+    congratsPopup.classList.add("hidden");
+    prizePopup.classList.remove("hidden");
+}
+
+function closeAllPopups() {
+    prizePopup.classList.add("hidden");
     quizScreenEl.classList.add("hidden");
+    introEl.classList.remove("hidden");
+    currentQuestion = 0;
 }
